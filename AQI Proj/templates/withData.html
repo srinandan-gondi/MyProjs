@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<form method="POST">
+    Please satisfy your seemingly unstoppable urge to 'know your air' through the following form:
+    <input type="text" autofocus autocomplete="on" placeholder="Place" name="place">
+    <input type="submit" value="Submit">
+</form>
+
+<h1 style="text-align: center;">{{ data1["name"] }}</h1> 
+<h2 style="text-align: center;">{{ data1["region"] }}, {{ data1["country"] }}</h2>
+<h2 style="text-align: center;"> {{ data1["weatherDescription"] }}, {{ data1["temperature"] }} degrees Celsius</h2>
+<h1 style="text-align: center;">AQI: {{ data1["AQI"] }}</h1>
+
+<iframe
+  width="1700"
+  height="700"
+  frameborder="0" style="border:0"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJlfBRWyK3HEX9IzgIy9WPYu3WennM3bY&q={{data1['name']}}"
+  allowfullscreen>
+</iframe>
+
+<h2 style="text-align: center;">Things you can do in your place without killing yourself, given the current AQI:
+  <br> 
+  
+    {% for i in range(data2 | length) %}
+      {{ data2[i] }}.
+      <br>
+    {% endfor %}  
+  
+</h2>
+
+
+
+
+
+
+
+{% endblock %}
