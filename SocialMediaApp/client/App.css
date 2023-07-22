@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.Navbar {
+  width: 100%;
+  height: 80px;
+  background-color: blue;
+  color: azure;
+  justify-content: right;
+  align-items: center;
+
+}
+
+.Navbar a {
+  font-size: 30px;
+  margin: 10px;
+  align-items:baseline ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: azure;
+}
+
+.Register {
+  text-align: center;
+  display:block;
+  flex-direction:row;
+}
+
+.register input,
+.register button {
+  display: flex;
+  
+  
+  justify-content: center;
+  align-items: center;
+  /* The following line will center the input and button boxes in a vertical column */
+  flex-direction: column;
+}
+
+.Login {
+  text-align: center;
+  display:block;
+  flex-direction:row;
+}
+
+.login input,
+.login button {
+  display: flex;
+  
+  
+  justify-content: center;
+  align-items: center;
+  /* The following line will center the input and button boxes in a vertical column */
+  flex-direction: column;
+}
+
+.Upload {
+  text-align: center;
+  display:block;
+  flex-direction:row;
+}
+
+.upload input,
+.upload button {
+  display: flex;
+  
+  
+  justify-content: center;
+  align-items: center;
+  /* The following line will center the input and button boxes in a vertical column */
+  flex-direction: column;
+}
+
+.Home {
+  /* width: 100%;
+  height: 750px;
+  
+  flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Home .post {
+  /* width: 100%;
+  height: 500px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin: 50px;
+  /* border: 2px black solid; */
+}
+
+.Home .eachPost {
+  text-align: center;
+}
+
+
